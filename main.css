@@ -4,11 +4,28 @@ body, html {
 
 body {
   background-image: url("cat1.jpg");
+  background-size: cover;
+  margin-left: 10px;
 }
 
 .title {
   font-family: helvetica, arial, sans-serif;
-  font-size: 50px;
+  font-size: 100px;
+  letter-spacing: -4px;
+  font-weight: bold;
   text-transform: uppercase;
-  color: rgb(255, 0, 0);
+  color: rgb(229, 229, 229);
+  margin-bottom: 40px;
+}
+
+.link {
+  font-family: helvetica, arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #fff567;
 }
