@@ -2,10 +2,33 @@ body, html {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='60' viewport='0 0 100 100' style='fill:black;font-size:30px;'><text y='50%'>🐾</text></svg>") 16 0, auto !important;
 }
 
-body {
+/* body {
   background-image: url("cat1.jpg");
   background-size: cover;
   margin-left: 10px;
+} */
+
+/* .background {
+  object-fit: cover;
+  width:100%;
+  height:100vh;
+} */
+
+.container {
+  position:relative;
+  width:fit-content;
+}
+
+.background-image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  size: cover;
+}
+
+.overlay-text {
+  z-index:1;
 }
 
 .title {
@@ -28,4 +51,5 @@ body {
 
 .link:hover {
   color: #fff567;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='60' viewport='0 0 100 100' style='fill:black;font-size:30px;'><text y='50%'>🐾</text></svg>") 16 0, auto !important;
 }
